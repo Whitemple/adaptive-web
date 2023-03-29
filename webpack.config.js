@@ -34,6 +34,14 @@ module.exports = (env) => ({
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, "src", "index.html"),
     }),
+    new HtmlWebpackPlugin({  // Создаем страницу Меню
+      filename: 'menuPage.html',
+      template: 'src/pages/menuPage.html'
+    }),
+    new HtmlWebpackPlugin({  // Создаем страницу О нас
+      filename: 'aboutPage.html',
+      template: 'src/pages/aboutPage.html'
+    }),
     new MiniCssExtractPlugin({
       filename: "index-[hash].css",
     }),
