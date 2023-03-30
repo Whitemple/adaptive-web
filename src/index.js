@@ -1,8 +1,9 @@
 import "@babel/polyfill";
-import "./index.html";
-import "./pages/menuPage.html";
-import "./pages/aboutPage.html";
 import "./index.scss";
+import "./index.html";
+import "./menuPage.html";
+import "./aboutPage.html";
+
 
 import './js/sandwichMenu.js';
 

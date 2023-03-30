@@ -16,7 +16,9 @@ module.exports = (env) => ({
 
   devtool: env.production ? "eval-source-map" : "source-map",
   mode: env.production ? "production" : "development",
-  entry: ["@babel/polyfill", "./src/index.js"],
+  entry: {
+    app: "./src/index.js"
+  },
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "[name]-[hash].js",
@@ -35,12 +37,15 @@ module.exports = (env) => ({
       template: path.resolve(__dirname, "src", "index.html"),
     }),
     new HtmlWebpackPlugin({  // Создаем страницу Меню
+      
       filename: 'menuPage.html',
-      template: 'src/pages/menuPage.html'
+      template: 'src/menuPage.html',
+      chunks: ['app']
     }),
     new HtmlWebpackPlugin({  // Создаем страницу О нас
       filename: 'aboutPage.html',
-      template: 'src/pages/aboutPage.html'
+      template: 'src/aboutPage.html',
+      chunks: ['app']
     }),
     new MiniCssExtractPlugin({
       filename: "index-[hash].css",
