@@ -17,6 +17,7 @@ module.exports = (env) => ({
   devtool: env.production ? "eval-source-map" : "source-map",
   mode: env.production ? "production" : "development",
   entry: {
+    babel: "@babel/polyfill",
     app: "./src/index.js"
   },
   output: {
@@ -45,6 +46,16 @@ module.exports = (env) => ({
     new HtmlWebpackPlugin({  // Создаем страницу О нас
       filename: 'aboutPage.html',
       template: 'src/aboutPage.html',
+      chunks: ['app']
+    }),
+    new HtmlWebpackPlugin({  // Создаем страницу О нас
+      filename: 'roadMapPage.html',
+      template: 'src/roadMapPage.html',
+      chunks: ['app']
+    }),
+    new HtmlWebpackPlugin({  // Создаем страницу О нас
+      filename: 'howToBuyPage.html',
+      template: 'src/howToBuyPage.html',
       chunks: ['app']
     }),
     new MiniCssExtractPlugin({

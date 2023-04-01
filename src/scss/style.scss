@@ -332,6 +332,7 @@
       box-shadow: 0px 8px 28px rgba(186, 186, 186, 0.25);
       position: relative;
       top: -190px;
+      margin-bottom: 79px;
     }
     &__image-video{
       width: 324px;
@@ -384,11 +385,113 @@
   }
 }
 
+/**********  MENU PAGE  ************/
 
-
-.menuPage__h1 {
-  color: green;
+.main{
+  &__section-menu{
+  }
 }
-.aboutPage__h1{
-  color: aqua;
+.section2{
+  &__title{
+    height: 44px;
+    width: 246px;
+    font-family: 'Montserrat-Bold';
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 44px;
+    letter-spacing: -0.4px;
+    text-align: center;
+    text-transform: uppercase;
+    background: linear-gradient(84.58deg, #8C84F7 -31.8%, #B4C3F8 122.69%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 0px 4px 30px rgba(139, 229, 215, 0.5);
+    margin-bottom: 27px;
+  }
+  &__cont{
+    
+  }
+  &__block{
+    height: 63px;
+    width: 358px;
+    border-radius: 10px;
+    background: linear-gradient(84.58deg, #8C84F7 -31.8%, #B4C3F8 122.69%);
+    box-shadow: 0px 8px 28px rgba(186, 186, 186, 0.25);
+    border-radius: 10px;
+    font-family: 'Montserrat-SemiBold';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.408px;
+    color: #FFFFFF;
+    margin: 0 auto 19px;
+    padding-left: 16px;
+  }
+  .non-color{
+    background: #FFFFFF;
+    line-height: 22px;
+    color: #8C84F7;
+  }
+  &__block:last-child{
+    margin-bottom: 79px;
+  }
+  &__icon{
+    border-radius: 50%;
+    padding: 8px;
+    background-color: white;
+    margin-right: 22px;
+  }
+
+}
+.footer{
+  min-width: 428px;
+  font-family: 'Montserrat-Regular';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #BBBBBB;
+  margin: 0 auto;
+  &__cont{
+    min-width: 256px;
+    height: 90px;
+    padding-left: 35px;
+    margin-bottom: 21px;
+  }
+  &__title{
+    font-family: 'Montserrat-Bold';
+    font-style: normal;
+    line-height: 18px;
+    color: #BBBBBB;
+    margin-bottom: 9px;
+    min-width: 110px;
+  }
+  &__text{
+    width: 256px;
+  }
+  &__sidebar{
+    width: 358px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 38px;
+    padding-left: 35px;
+  }
+  &__rights{
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+    text-decoration-line: underline;
+    color: #565656;
+  }
+}
+.footer-indexPage{
+  position: relative;
+  top: 367px;
 }
