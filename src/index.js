@@ -18,4 +18,8 @@ switch (window.location.pathname) {
     main.innerText = "MAIN";
     main.href = "./index.html";
     break;
+  default:
+    main.innerText = "MAIN";
+    main.href = "./index.html";
+    break;
 }

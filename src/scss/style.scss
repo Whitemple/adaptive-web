@@ -493,17 +493,17 @@
 
 /**********  ABOUT PAGE  ************/
 
-.section3__title-block{
+.section3__title-block {
   display: grid;
   justify-items: right;
   margin: 0 33px 36px 0;
 }
 
-.section3-title-position{
+.section3-title-position {
   margin-bottom: 0;
   text-align: left;
 }
-.section3-subtitle{
+.section3-subtitle {
   height: 30px;
   text-align: left;
   font-size: 16px;
@@ -512,26 +512,26 @@
   display: flex;
   align-items: flex-end;
 }
-.section3{
-  background-color: #FFFFFF;
-  &__cont{
+.section3 {
+  background-color: #ffffff;
+  &__cont {
     min-width: 428px;
   }
-  &__block1{
+  &__block1 {
     width: 295px;
     margin: 0 auto;
     padding: 16px 20px 16px 44px;
     border-radius: 10px;
-    background: #FFFFFF;
+    background: #ffffff;
     box-shadow: 0px 4px 14px 0px rgb(183 183 183 / 69%);
-    font-family: 'Montserrat-Regular';
+    font-family: "Montserrat-Regular";
     font-style: normal;
     font-size: 16px;
     line-height: 27px;
     color: #565656;
     margin-bottom: 40px;
   }
-  &__block2{
+  &__block2 {
     background-image: url(./images/planetSystem.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -542,24 +542,23 @@
 
 /**********  ROAD MAP PAGE  ************/
 
-.main{
-  &__section-roadMap{
+.main {
+  &__section-roadMap {
     min-width: 428px;
   }
 }
-.section4{
-  &__block{
+.section4 {
+  &__block {
     width: 267px;
     padding: 21px 47px 21px 43px;
     margin: 0 auto;
-    background: #FFFFFF;
+    background: #ffffff;
     box-shadow: 0px 4px 44px rgba(203, 203, 203, 0.25);
     border-radius: 15px;
     margin-bottom: 22px;
-    
   }
-  &__text{
-    font-family: 'Montserrat-Regular';
+  &__text {
+    font-family: "Montserrat-Regular";
     font-style: normal;
     font-size: 16px;
     line-height: 26px;
