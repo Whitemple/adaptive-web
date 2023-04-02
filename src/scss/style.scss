@@ -6,7 +6,7 @@
   overflow: hidden;
   margin-bottom: 29px;
 
-  &__cont{
+  &__cont {
     padding-top: 15px;
     width: 305px;
     margin: 0 auto;
@@ -16,29 +16,29 @@
     margin-bottom: 34.47px;
     position: relative;
   }
-  &__elipse1{
+  &__elipse1 {
     height: 358px;
     width: 599px;
     position: absolute;
-    border: 1px dashed #7075FF;
+    border: 1px dashed #7075ff;
     filter: blur(0.5px);
     transform: rotate(3.38deg);
     border-radius: 50%;
     top: -58px;
     left: -83px;
   }
-  &__elipse2{
+  &__elipse2 {
     width: 678.37px;
     height: 403.73px;
     position: absolute;
-    border: 1px dashed #7075FF;
+    border: 1px dashed #7075ff;
     filter: blur(0.5px);
     transform: rotate(3.38deg);
     border-radius: 50%;
     top: -66px;
     left: -130px;
   }
-  &__country{
+  &__country {
     width: 96.23px;
     height: 35.53px;
     border-radius: 43px;
@@ -47,9 +47,8 @@
     justify-content: center;
     align-items: center;
     gap: 2px;
-    
   }
-  &__countryList{
+  &__countryList {
     position: absolute;
     top: 51px;
     left: 0px;
@@ -59,37 +58,37 @@
     background-color: #565656;
     padding-bottom: 10px;
   }
-  &__countryImage{
+  &__countryImage {
     background-image: url(./images/icons/usa.png);
     width: 20px;
     height: 19px;
     border-radius: 50%;
   }
-  &__countryTitle{
+  &__countryTitle {
     width: 49px;
     height: 16px;
     text-align: center;
-    font-family: 'Montserrat-Regular';
+    font-family: "Montserrat-Regular";
   }
-  &__list{
+  &__list {
     width: 18px;
     height: 13px;
     position: relative;
   }
-  &__listItem{
+  &__listItem {
     width: 18px;
-    height:1px;
+    height: 1px;
     background-color: #565656;
     box-shadow: 0px 5px 0 0px #565656, 0 10px 0 0 #565656;
   }
-  &__mainTitle{
+  &__mainTitle {
     line-height: 102px;
-    font-family: 'Anurati';
+    font-family: "Anurati";
     font-size: 85px;
     text-align: center;
     min-width: 380px;
     min-height: 105px;
-    background: linear-gradient(94.18deg, #6AE6C4 -43.24%, #8C84F6 116.18%);
+    background: linear-gradient(94.18deg, #6ae6c4 -43.24%, #8c84f6 116.18%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -97,7 +96,7 @@
     text-shadow: 0px 4px 30px rgba(140, 132, 247, 0.25);
     margin-bottom: 38px;
   }
-  &__buttons{
+  &__buttons {
     min-width: 358px;
     min-height: 59px;
     display: flex;
@@ -107,16 +106,16 @@
     margin-bottom: 46px;
     background-color: #f7fbff;
   }
-  &__btnMint{
+  &__btnMint {
     width: 148px;
     height: 59px;
-    background: linear-gradient(81.89deg, #8C84F7 -26.28%, #C8E1F8 154.6%);
+    background: linear-gradient(81.89deg, #8c84f7 -26.28%, #c8e1f8 154.6%);
     /* abj */
-    border: 1px solid #8C84F7;
+    border: 1px solid #8c84f7;
     box-shadow: 0px 4px 19px rgba(140, 132, 246, 0.5);
     border-radius: 5px;
-    font-family: 'Montserrat-Bold';
-    color: #FFFFFF;
+    font-family: "Montserrat-Bold";
+    color: #ffffff;
     text-transform: uppercase;
     text-align: center;
     font-size: 24px;
@@ -124,18 +123,18 @@
     letter-spacing: 2px;
     margin-right: 16px;
   }
-  &__btnWalley{
+  &__btnWalley {
     width: 194px;
     height: 59px;
     /* abj */
-    border: 1px solid #8C84F7;
+    border: 1px solid #8c84f7;
     filter: drop-shadow(0px 3px 9px rgba(140, 132, 246, 0.7));
     border-radius: 5px;
-    font-family: 'Montserrat-Bold';
+    font-family: "Montserrat-Bold";
     font-size: 20px;
     line-height: 21px;
     letter-spacing: 2px;
-    background: linear-gradient(84.31deg, #8C84F7 -43.36%, #C8E1F8 147.95%);
+    background: linear-gradient(84.31deg, #8c84f7 -43.36%, #c8e1f8 147.95%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -144,69 +143,68 @@
     align-items: center;
     padding-left: 15px;
   }
-  &__walletTitle{
+  &__walletTitle {
     width: 134px;
     text-align: left;
     font-size: 20px;
   }
-  &__iconsBar-cont{
+  &__iconsBar-cont {
     width: 358px;
     height: 44px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    background: #FFFFFF;
+    background: #ffffff;
     box-shadow: 0px 4px 13px rgba(217, 217, 217, 0.23);
     border-radius: 32.5px;
     position: relative;
     z-index: 2;
   }
-  
 }
-.iconsBar{
+.iconsBar {
   height: 23px;
-  &>li{
+  & > li {
     display: inline;
   }
-  &>li:not(:last-child){
+  & > li:not(:last-child) {
     margin-right: 16px;
   }
 }
-.wallet-icon{
+.wallet-icon {
   width: 27px;
   height: 18px;
   border-radius: 2px;
-  background-color: #8C84F7;
+  background-color: #8c84f7;
   position: relative;
-  &__plank{
+  &__plank {
     height: 3px;
     border-radius: 2px 2px 0 0;
     width: 24px;
-    background-color: #8C84F7;
+    background-color: #8c84f7;
     position: absolute;
     top: -4px;
     left: 0;
   }
-  &__column{
-    background-color: #8C84F7;
+  &__column {
+    background-color: #8c84f7;
     width: 3px;
     height: 9px;
     position: absolute;
     top: -2px;
     left: 0;
   }
-  &__circle{
+  &__circle {
     position: absolute;
     top: 9px;
     right: 4px;
     width: 4px;
     height: 4px;
     border-radius: 50%;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
   }
 }
-.sandwish-menu{
+.sandwish-menu {
   display: none;
   top: 3px;
   right: 159px;
@@ -217,18 +215,18 @@
   padding: 20px 0 0 21px;
   box-shadow: 0px 4px 20px rgba(174, 174, 174, 0.25);
   z-index: 3;
-  &__ul{
-    &>li{
+  &__ul {
+    & > li {
       margin-bottom: 35px;
-      :hover{
-        color: #8C84F7;
+      :hover {
+        color: #8c84f7;
         font-weight: 600;
         font-size: 22px;
       }
-      &>a{
+      & > a {
         text-decoration: none;
         color: #000;
-        font-family: 'Montserrat-Regular';
+        font-family: "Montserrat-Regular";
         font-style: normal;
         font-weight: 300;
         font-size: 20px;
@@ -236,11 +234,11 @@
       }
     }
   }
-  .last-child{
+  .last-child {
     margin-bottom: 0;
     padding-bottom: 20px;
   }
-  &__close-btn{
+  &__close-btn {
     background-color: transparent;
     text-transform: uppercase;
     border: none;
@@ -254,48 +252,47 @@
     align-items: center;
   }
 }
-.show-class{
+.show-class {
   display: block;
 }
-.main{
+.main {
   width: 428px;
-  &__section-budha{
+  &__section-budha {
     height: 688px;
     width: 428px;
-
   }
-  .section-1{
-    &__budhaPage{
-      width:428px;
+  .section-1 {
+    &__budhaPage {
+      width: 428px;
       height: 510px;
       background-image: url(./images/main-wallpaper.svg);
       overflow: hidden;
     }
-    &__budhaCivara{
+    &__budhaCivara {
       background-image: url(./images/budhaCivara.svg);
-      width:348px;
-      height:346px;
+      width: 348px;
+      height: 346px;
     }
-    &__budhaSkin{
+    &__budhaSkin {
       background-image: url(./images/budhaSkin.svg);
-      width:352px;
-      height:360px;
+      width: 352px;
+      height: 360px;
       position: relative;
       bottom: -120px;
       margin: 0 auto;
     }
-    &__elipse-main{
+    &__elipse-main {
       width: 428px;
       height: 374px;
-      background: linear-gradient(94.18deg, #9EA9C9 -43.24%, #A4AAC8 116.18%);
+      background: linear-gradient(94.18deg, #9ea9c9 -43.24%, #a4aac8 116.18%);
       opacity: 0.2;
       border-radius: 0 0 125px 125px;
     }
-    &__h2{
+    &__h2 {
       width: 412px;
       height: 44px;
       margin: 0 auto;
-      font-family: 'Montserrat-Bold';
+      font-family: "Montserrat-Bold";
       font-weight: 700;
       font-size: 36px;
       line-height: 44px;
@@ -307,12 +304,12 @@
       padding-top: 50px;
       margin-bottom: 15px;
     }
-    &__text{
+    &__text {
       width: 350px;
       height: 52px;
       margin: 0 auto;
       /* 16 шрифт мобил */
-      font-family: 'Montserrat-Regular';
+      font-family: "Montserrat-Regular";
       font-style: normal;
       font-weight: 400;
       font-size: 16px;
@@ -322,19 +319,19 @@
       /* ccc */
       color: #000;
     }
-    &__video-block{
+    &__video-block {
       width: 358px;
       height: 270px;
       margin: 0 auto;
       padding-top: 15px;
-      background-color: #FFFFFF;
+      background-color: #ffffff;
       border-radius: 15px;
       box-shadow: 0px 8px 28px rgba(186, 186, 186, 0.25);
       position: relative;
       top: -190px;
       margin-bottom: 79px;
     }
-    &__image-video{
+    &__image-video {
       width: 324px;
       height: 188px;
       margin: 0 auto;
@@ -344,22 +341,22 @@
       align-items: center;
       margin-bottom: 9px;
     }
-    &__h3{
+    &__h3 {
       height: 20px;
       width: 249px;
       margin: 0 auto;
-      font-family: 'Montserrat-Regular';
+      font-family: "Montserrat-Regular";
       font-size: 16px;
       font-weight: 400;
       line-height: 20px;
       text-align: left;
       margin-bottom: 3px;
     }
-    &__paragpaph{
+    &__paragpaph {
       width: 249px;
       height: 20px;
       margin: 0 auto;
-      font-family: 'Montserrat-Regular';
+      font-family: "Montserrat-Regular";
       font-style: normal;
       font-weight: 400;
       font-size: 14px;
@@ -367,8 +364,8 @@
       text-align: left;
     }
   }
-  .image-video{
-    &__play-back{
+  .image-video {
+    &__play-back {
       height: 82px;
       width: 82px;
       z-index: 2;
@@ -377,7 +374,7 @@
       justify-content: center;
       align-items: center;
     }
-    &__play-icon{
+    &__play-icon {
       height: 23px;
       width: 23px;
       background-image: url(./images/icons/play-icon.png);
@@ -385,24 +382,24 @@
   }
 }
 
-/**********  MENU PAGE  ************/
+/**********  HOW TO BUY PAGE  ************/
 
-.main{
-  &__section-menu{
+.main {
+  &__section-menu {
   }
 }
-.section2{
-  &__title{
+.section2 {
+  &__title {
     height: 44px;
     width: 246px;
-    font-family: 'Montserrat-Bold';
+    font-family: "Montserrat-Bold";
     font-size: 36px;
     font-weight: 700;
     line-height: 44px;
     letter-spacing: -0.4px;
     text-align: center;
     text-transform: uppercase;
-    background: linear-gradient(84.58deg, #8C84F7 -31.8%, #B4C3F8 122.69%);
+    background: linear-gradient(84.58deg, #8c84f7 -31.8%, #b4c3f8 122.69%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -410,17 +407,16 @@
     text-shadow: 0px 4px 30px rgba(139, 229, 215, 0.5);
     margin-bottom: 27px;
   }
-  &__cont{
-    
+  &__cont {
   }
-  &__block{
+  &__block {
     height: 63px;
     width: 358px;
     border-radius: 10px;
-    background: linear-gradient(84.58deg, #8C84F7 -31.8%, #B4C3F8 122.69%);
+    background: linear-gradient(84.58deg, #8c84f7 -31.8%, #b4c3f8 122.69%);
     box-shadow: 0px 8px 28px rgba(186, 186, 186, 0.25);
     border-radius: 10px;
-    font-family: 'Montserrat-SemiBold';
+    font-family: "Montserrat-SemiBold";
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
@@ -428,62 +424,61 @@
     display: flex;
     align-items: center;
     letter-spacing: -0.408px;
-    color: #FFFFFF;
+    color: #ffffff;
     margin: 0 auto 19px;
     padding-left: 16px;
   }
-  .non-color{
-    background: #FFFFFF;
+  .non-color {
+    background: #ffffff;
     line-height: 22px;
-    color: #8C84F7;
+    color: #8c84f7;
   }
-  &__block:last-child{
+  &__block:last-child {
     margin-bottom: 79px;
   }
-  &__icon{
+  &__icon {
     border-radius: 50%;
     padding: 8px;
     background-color: white;
     margin-right: 22px;
   }
-
 }
-.footer{
+.footer {
   min-width: 428px;
-  font-family: 'Montserrat-Regular';
+  font-family: "Montserrat-Regular";
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 18px;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: #BBBBBB;
+  color: #bbbbbb;
   margin: 0 auto;
-  &__cont{
+  &__cont {
     min-width: 256px;
     height: 90px;
     padding-left: 35px;
     margin-bottom: 21px;
   }
-  &__title{
-    font-family: 'Montserrat-Bold';
+  &__title {
+    font-family: "Montserrat-Bold";
     font-style: normal;
     line-height: 18px;
-    color: #BBBBBB;
+    color: #bbbbbb;
     margin-bottom: 9px;
     min-width: 110px;
   }
-  &__text{
+  &__text {
     width: 256px;
   }
-  &__sidebar{
+  &__sidebar {
     width: 358px;
     display: flex;
     justify-content: space-between;
     margin-bottom: 38px;
     padding-left: 35px;
   }
-  &__rights{
+  &__rights {
     line-height: 15px;
     display: flex;
     align-items: center;
@@ -491,7 +486,56 @@
     color: #565656;
   }
 }
-.footer-indexPage{
+.footer-indexPage {
   position: relative;
   top: 367px;
+}
+
+/**********  ABOUT PAGE  ************/
+
+.section3__title-block{
+  display: grid;
+  justify-items: right;
+  margin: 0 33px 36px 0;
+}
+
+.section3-title-position{
+  margin-bottom: 0;
+  text-align: left;
+}
+.section3-subtitle{
+  height: 30px;
+  text-align: left;
+  font-size: 16px;
+  letter-spacing: 8px;
+  margin-bottom: 0;
+  display: flex;
+  align-items: flex-end;
+}
+.section3{
+  background-color: #FFFFFF;
+  &__cont{
+    min-width: 428px;
+  }
+  &__block1{
+    width: 295px;
+    margin: 0 auto;
+    padding: 16px 20px 16px 44px;
+    border-radius: 10px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 14px 0px rgb(183 183 183 / 69%);
+    font-family: 'Montserrat-Regular';
+    font-style: normal;
+    font-size: 16px;
+    line-height: 27px;
+    color: #565656;
+    margin-bottom: 40px;
+  }
+  &__block2{
+    background-image: url(./images/planetSystem.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 428px;
+    height: 305px;
+  }
 }

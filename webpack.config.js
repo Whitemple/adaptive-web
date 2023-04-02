@@ -18,13 +18,13 @@ module.exports = (env) => ({
   mode: env.production ? "production" : "development",
   entry: {
     babel: "@babel/polyfill",
-    app: "./src/index.js"
+    app: "./src/index.js",
   },
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "[name]-[hash].js",
     clean: true,
-    assetModuleFilename: 'asset/[hash][ext]',
+    assetModuleFilename: "asset/[hash][ext]",
   },
   devServer: {
     static: {
@@ -37,26 +37,30 @@ module.exports = (env) => ({
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, "src", "index.html"),
     }),
-    new HtmlWebpackPlugin({  // Создаем страницу Меню
-      
-      filename: 'menuPage.html',
-      template: 'src/menuPage.html',
-      chunks: ['app']
+    new HtmlWebpackPlugin({
+      // Создаем страницу Меню
+
+      filename: "menuPage.html",
+      template: "src/menuPage.html",
+      chunks: ["app"],
     }),
-    new HtmlWebpackPlugin({  // Создаем страницу О нас
-      filename: 'aboutPage.html',
-      template: 'src/aboutPage.html',
-      chunks: ['app']
+    new HtmlWebpackPlugin({
+      // Создаем страницу О нас
+      filename: "aboutPage.html",
+      template: "src/aboutPage.html",
+      chunks: ["app"],
     }),
-    new HtmlWebpackPlugin({  // Создаем страницу О нас
-      filename: 'roadMapPage.html',
-      template: 'src/roadMapPage.html',
-      chunks: ['app']
+    new HtmlWebpackPlugin({
+      // Создаем страницу О нас
+      filename: "roadMapPage.html",
+      template: "src/roadMapPage.html",
+      chunks: ["app"],
     }),
-    new HtmlWebpackPlugin({  // Создаем страницу О нас
-      filename: 'howToBuyPage.html',
-      template: 'src/howToBuyPage.html',
-      chunks: ['app']
+    new HtmlWebpackPlugin({
+      // Создаем страницу О нас
+      filename: "howToBuyPage.html",
+      template: "src/howToBuyPage.html",
+      chunks: ["app"],
     }),
     new MiniCssExtractPlugin({
       filename: "index-[hash].css",
@@ -95,25 +99,23 @@ module.exports = (env) => ({
           "sass-loader",
         ],
       },
-        //   Babel-loader
+      //   Babel-loader
       {
         test: /\.m?js$/i,
         exclude: /node_modules/,
         use: {
-          loader: 'babel-loader',
+          loader: "babel-loader",
           options: {
-            presets: [
-              ['@babel/preset-env', { targets: "defaults" }]
-            ]
-          }
-        }
+            presets: [["@babel/preset-env", { targets: "defaults" }]],
+          },
+        },
       },
       // Image rules
       {
         test: /\.(jpe?g|png|webp|gif|svg)$/i,
         use: [
           {
-            loader: 'image-webpack-loader',
+            loader: "image-webpack-loader",
             options: {
               mozjpeg: {
                 progressive: true,
@@ -123,28 +125,28 @@ module.exports = (env) => ({
                 enabled: false,
               },
               pngquant: {
-                quality: [0.65, 0.90],
-                speed: 4
+                quality: [0.65, 0.9],
+                speed: 4,
               },
               gifsicle: {
                 interlaced: false,
               },
               // the webp option will enable WEBP
               webp: {
-                quality: 75
-              }
-            }
-          }
+                quality: 75,
+              },
+            },
+          },
         ],
-        type: 'asset/resource'
+        type: "asset/resource",
       },
       // Fonts rules
       {
         test: /\.woff2?$/i,
-        type: 'asset/resource',
+        type: "asset/resource",
         generator: {
-          filename: 'fonts/[name][ext]'
-        }
+          filename: "fonts/[name][ext]",
+        },
       },
     ],
   },
