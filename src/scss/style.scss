@@ -539,3 +539,32 @@
     height: 305px;
   }
 }
+
+/**********  ROAD MAP PAGE  ************/
+
+.main{
+  &__section-roadMap{
+    min-width: 428px;
+  }
+}
+.section4{
+  &__block{
+    width: 267px;
+    padding: 21px 47px 21px 43px;
+    margin: 0 auto;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 44px rgba(203, 203, 203, 0.25);
+    border-radius: 15px;
+    margin-bottom: 22px;
+    
+  }
+  &__text{
+    font-family: 'Montserrat-Regular';
+    font-style: normal;
+    font-size: 16px;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    color: #565656;
+  }
+}
