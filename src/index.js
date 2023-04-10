@@ -1,4 +1,8 @@
 import "@babel/polyfill";
+// import "./libs/jq.js";
+
+import "./libs/slider/slick.min.js";
+import "./js/slick.js";
 import "./index.scss";
 import "./index.html";
 import "./menuPage.html";

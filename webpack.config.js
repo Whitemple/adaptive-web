@@ -17,7 +17,7 @@ module.exports = (env) => ({
   devtool: env.production ? "eval-source-map" : "source-map",
   mode: env.production ? "production" : "development",
   entry: {
-    babel: "@babel/polyfill",
+    babel: "@babel/polyfill/noConflict",
     app: "./src/index.js",
   },
   output: {
@@ -65,6 +65,10 @@ module.exports = (env) => ({
     new MiniCssExtractPlugin({
       filename: "index-[hash].css",
     }),
+    // new webpack.ProvidePlugin({
+    //   $: 'jquery',
+    //   jQuery: 'jquery',
+    // }),
   ],
   module: {
     rules: [
